@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One-to-One Personal Training | The Fithub</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .btn {
+      background-color: #1db954; /* Neon green */
+      color: white;
+      padding: 0.75rem 2rem;
+      border-radius: 50px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #1ed760;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body class="bg-gray-900 text-gray-100">
+
+  <!-- Header -->
+  <header class="text-gray-100 body-font bg-black">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a href="index.html" class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-3xl text-white">The Fithub</span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-green-500 text-gray-300" href="index.html">Home</a>
+        <a class="mr-5 hover:text-green-500 text-gray-300" href="faq.html">FAQ</a>
+        <a class="mr-5 hover:text-green-500 text-gray-300" href="about.html">About Us</a>
+        <a class="mr-5 hover:text-green-500 text-gray-300" href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-gray-100 body-font py-24 bg-gradient-to-r from-black via-gray-800 to-black">
+    <div class="container px-5 mx-auto text-center">
+      <h1 class="sm:text-5xl text-3xl font-bold title-font mb-6 text-white">One-to-One Personal Training</h1>
+      <div class="h-1 w-20 bg-green-500 rounded mx-auto mb-8"></div>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-lg text-gray-300">
+        Experience personalized fitness training that’s designed just for you. Whether you want to lose weight, build strength, or improve your fitness, our certified trainers will work with you to create a plan that meets your individual goals.
+      </p>
+    </div>
+  </section>
+
+  <!-- Training Info Section -->
+  <section class="text-gray-100 body-font py-24">
+    <div class="container px-5 mx-auto">
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/2 md:w-1/2 p-4">
+          <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold text-white mb-4">Why Choose One-to-One Training?</h2>
+            <p class="leading-relaxed text-base text-gray-300 mb-4">
+              Personalized attention from a certified trainer allows for a tailored workout plan to target your specific fitness goals. Whether you’re new to working out or a seasoned athlete, we’ll adapt the training to meet your current fitness level.
+            </p>
+            <ul class="list-disc pl-5 text-gray-300">
+              <li>Customized workout plans</li>
+              <li>Expert guidance and technique correction</li>
+              <li>Progress tracking</li>
+              <li>Motivational support</li>
+              <li>Flexible scheduling</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="xl:w-1/2 md:w-1/2 p-4">
+          <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold text-white mb-4">Get Started Today!</h2>
+            <p class="leading-relaxed text-base text-gray-300 mb-4">
+              Book your first one-on-one session and start working towards your fitness goals today! Our trainers are ready to guide you every step of the way. Choose a plan that works best for you.
+            </p>
+            <a href="contact.html" target="_blank">
+              <button class="btn">Contact Us</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-gray-400 body-font bg-black">
+    <div class="container px-5 py-8 mx-auto flex items-center justify-center">
+      <p class="text-sm text-center text-gray-300">© 2024 The Fithub — All Rights Reserved</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

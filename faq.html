@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - The Fithub</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: #2d3748;
+            font-family: 'Ubuntu', sans-serif;
+            color: #edf2f7;
+        }
+
+        .faq-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 1rem;
+        }
+
+        .faq-question {
+            background: linear-gradient(145deg, #4a5568, #2d3748);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .faq-question:hover {
+            background: linear-gradient(145deg, #2d3748, #4a5568);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transform: scale(1.05);
+        }
+
+        .faq-answer {
+            background-color: #4a5568;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            display: none;
+            margin-left: 2rem;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .faq-question i {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-question.open i {
+            transform: rotate(180deg);
+        }
+
+        .faq-question.open + .faq-answer {
+            display: block;
+            opacity: 1;
+        }
+
+        .header-title {
+            font-size: 3rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .footer {
+            background: linear-gradient(145deg, #2d3748, #4a5568);
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header class="bg-gradient-to-r from-green-400 via-blue-500 to-indigo-600 text-white py-12">
+        <div class="container mx-auto text-center">
+            <h1 class="header-title">Frequently Asked Questions</h1>
+        </div>
+    </header>
+
+    <div class="faq-container">
+
+        <!-- Section Title -->
+        <h2 class="section-title text-white">Your Questions, Answered</h2>
+
+        <!-- Question 1 -->
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <span class="font-semibold text-lg">What is The Fithub?</span>
+            <i class="fa-solid fa-chevron-down text-white"></i>
+        </div>
+        <div class="faq-answer">
+            <p>The Fithub is an online platform dedicated to promoting fitness awareness and encouraging healthy lifestyles. It provides resources on physical fitness, nutrition, and mental well-being for all levels of fitness enthusiasts.</p>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <span class="font-semibold text-lg">How can I start my fitness journey?</span>
+            <i class="fa-solid fa-chevron-down text-white"></i>
+        </div>
+        <div class="faq-answer">
+            <p>You can start your fitness journey by setting realistic goals, beginning with simple exercises, and gradually increasing the intensity. Make sure to stay consistent, eat a balanced diet, and stay motivated. Our website offers guides and tips to help you get started!</p>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <span class="font-semibold text-lg">Do I need to be a member to access the resources?</span>
+            <i class="fa-solid fa-chevron-down text-white"></i>
+        </div>
+        <div class="faq-answer">
+            <p>No, you do not need to be a member to access the general fitness resources on The Fithub website. However, creating an account may grant you additional benefits like tracking your progress, receiving personalized workout plans, and joining fitness challenges.</p>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <span class="font-semibold text-lg">What kind of exercises should I focus on?</span>
+            <i class="fa-solid fa-chevron-down text-white"></i>
+        </div>
+        <div class="faq-answer">
+            <p>It depends on your goals. If you’re aiming for general fitness, a mix of cardiovascular exercises (running, cycling) and strength training (weightlifting, bodyweight exercises) is a great starting point. Yoga and flexibility exercises are also essential for overall well-being.</p>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <span class="font-semibold text-lg">Can I lose weight without a gym membership?</span>
+            <i class="fa-solid fa-chevron-down text-white"></i>
+        </div>
+        <div class="faq-answer">
+            <p>Yes, weight loss is primarily driven by a calorie deficit, which can be achieved through a combination of exercise (e.g., walking, running, bodyweight exercises) and a balanced diet. You don’t need a gym membership to lose weight, but access to fitness equipment can help you reach your goals faster.</p>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <span class="font-semibold text-lg">How do I stay motivated to work out regularly?</span>
+            <i class="fa-solid fa-chevron-down text-white"></i>
+        </div>
+        <div class="faq-answer">
+            <p>Staying motivated can be challenging. Set small, achievable goals and track your progress. Having a workout buddy or joining fitness challenges can help keep you accountable. Remember, consistency is key, and it’s okay to have off days. Just keep going!</p>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p class="text-white">© 2024 The Fithub. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Toggle the FAQ answers visibility
+        function toggleAnswer(question) {
+            const isOpen = question.classList.contains("open");
+            const allAnswers = document.querySelectorAll(".faq-answer");
+            const allQuestions = document.querySelectorAll(".faq-question");
+
+            // Close all answers
+            allAnswers.forEach(answer => answer.style.display = "none");
+            allQuestions.forEach(q => q.classList.remove("open"));
+
+            // Open the clicked answer
+            if (!isOpen) {
+                question.classList.add("open");
+                question.nextElementSibling.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

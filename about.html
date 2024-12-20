@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - The Fithub</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            background-color: #1a202c;
+            color: #edf2f7;
+        }
+
+        .section-header {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 700;
+            color: white;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: white;
+        }
+
+        .team-member {
+            background: linear-gradient(145deg, #4a5568, #2d3748);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 1rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .team-member:hover {
+            background: linear-gradient(145deg, #2d3748, #4a5568);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transform: scale(1.05);
+        }
+
+        .team-member h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #edf2f7;
+            margin-bottom: 0.5rem;
+        }
+
+        .team-member p {
+            font-size: 1rem;
+            color: #cbd5e0;
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 1rem;
+        }
+
+        .about-text {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #e2e8f0;
+            margin-bottom: 3rem;
+        }
+
+        .mission-statement {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #edf2f7;
+            margin-bottom: 2rem;
+        }
+
+        .image-container {
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .image-container img {
+            border-radius: 12px;
+            width: 100%;
+            height: auto;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- About Us Section -->
+    <div class="about-container">
+        <!-- Header Section -->
+        <header>
+            <h1 class="section-header">About Us</h1>
+            <p class="about-text">
+                Welcome to **The Fithub**, your ultimate fitness partner! Our mission is to inspire and empower
+                individuals to achieve their health and fitness goals through a combination of expert advice,
+                customized workout plans, and a supportive community. We believe that fitness is not just a routine,
+                but a lifestyle that brings mental, physical, and emotional well-being.
+            </p>
+        </header>
+
+        <!-- Mission Statement -->
+        <section>
+            <h2 class="section-title">Our Mission</h2>
+            <p class="mission-statement">
+                At **The Fithub**, our goal is to create a healthier world by providing accessible fitness resources
+                for everyone, regardless of age, skill level, or background. We are committed to offering expert
+                advice, motivating tools, and a strong sense of community to help you along your fitness journey.
+            </p>
+        </section>
+
+        <!-- Meet The Team -->
+        <section>
+            <h2 class="section-title">Meet The Team</h2>
+            <div class="flex justify-center flex-wrap">
+
+                <!-- Team Member 1 -->
+                <div class="team-member max-w-xs mx-4">
+                    <h3>John Doe</h3>
+                    <p>Founder & Fitness Coach</p>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="team-member max-w-xs mx-4">
+                    <h3>Jane Smith</h3>
+                    <p>Nutrition Expert</p>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="team-member max-w-xs mx-4">
+                    <h3>Mike Johnson</h3>
+                    <p>Yoga Instructor</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Image of Team or Fitness -->
+        <section class="image-container">
+            <img src="https://images.fresha.com/lead-images/placeholders/gym-and-fitness-19.jpg?class=venue-gallery-large" alt="Fitness Image">
+        </section>
+
+    </div>
+
+</body>
+
+</html>
